@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Nested Table</title>
+    <style>
+        #tab1 {
+            border-collapse: collapse;
+            width: 300px;
+            height: 150px;
+        }
+        #tab2 {
+            border-collapse: collapse;
+            width: 300px;
+            height: 150px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+        }
+    table, th, td {
+        border: 1px solid rgb(4, 119, 33);
+    }
+    </style>
+</head>
+<body>
+    <!-- Nested table are tables inside a table -->
+    <!-- Two tables that are the same but are put together differently -->
+    <table>
+        <!-- This table is the 3 row table and 2 column one -->
+        <thead>
+            <table id="tab1">
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>  
+                    <table>
+                             <tr>
+                               
+                                <td>    
+                                    <!-- Orange cell colour -->
+                                    <table style="background-color:orange">
+                                        <tr> 
+                                            <td>4</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                                <!-- Yellow cell color -->
+                                <td style="background-color:rgb(238, 255, 0)">6</td>
+                            <tr>
+                                <td style="background-color:yellow">9</td>
+                                <td style="background-color:yellow">10</td>
+                            </tr>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+
+
+    </table>
+
+<br>
+<br>
+    <table id="tab2">
+        <!-- This Table is the one with 2 rows and 2 columns -->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+                <td>
+                <table>
+                    <tr>
+                        <td>
+                            <!-- Orange cell colour -->
+                            <table style="background-color:orange">
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                            </table>
+                        </td>
+                            <!-- Yellow cell colour -->
+                        <td style="background-color:rgb(238, 255, 0)">6</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgb(238, 255, 0)">9</td>
+                        <td style="background-color:rgb(238, 255, 0)">10</td>
+                    </tr>
+                </table>
+                </td>
+
+        
+        </tr>
+
+    </table>
+
+
+
+</body>
+</html>

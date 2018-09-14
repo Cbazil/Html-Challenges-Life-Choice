@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Validation Form</title>
+
+</head>
+<body>
+    <!-- Validation form it validates the page is area area not filled -->
+    <h1>Registration Form</h1>
+    <form class="Registration" method="POST" action="/action_page.php" validate>
+        <label>User id:</label>
+        <input name="User id" type="text" minlenght="5" maxlength="12" required><br>
+        <lebel>Password:</lebel>
+        <input name="" type="password" minlenght="7" maxlenght="12" required><br>
+        <label>Name:</label>
+        <input name="Name" type="text" pattern="[a-Za-z ]{}" title="letters only" required><br>
+        <label>Address:</label>
+        <input name="Address" type="text"><br>
+        <label>Country:</label>
+        <!-- Dropdown list -->
+        <select  required>
+            <option value="" >(Please select a country)</option>
+            <option value="" >South Africa</option>
+            <option value="" >USA</option>
+            <option value="" >Germany</option>
+            <option value="" >Nigeria</option>
+        </select><br>
+        <label>ZIP Code:</label>
+        <!-- Pattern requires only letters (Alphabet) -->
+        <input name="" Type="text" pattern="[0-9]+" title="only letters" required><br>
+        <!-- Pattern for valid email addresses -->
+        <label>Email:</label>
+        <input name="" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required><br>
+
+        <!-- Radio -->
+        <label>Sex:</label> 
+        <input name="Sex" type="radio"  value="1" requred>Male
+        <input name="Sex" type="radio"  value="2" required>Female
+        <br>
+        <!-- Checkbox -->
+        <label>Language:</label>
+        <input name="Language" type="checkbox" value="1" required>English
+        <input name="Language" type="checkbox" value="2" required>Non English
+        <br>
+        <br>
+        <label>About:</label>
+        <textarea rows="8" cols="30"></textarea><br>
+        <input type="submit" value="submit">
+        
+    </form>
+
+</body>
+</html>

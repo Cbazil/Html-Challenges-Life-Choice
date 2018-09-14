@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Coffee Shop Survey</title>
+</head>
+<body style="text-align:center; background-color: rgb(170, 180, 238)">
+    <h1>Survey</h1>
+    <hr>
+    <br>
+    <!-- There can't be a form inside a form -->
+    <form >
+            <!-- Button resets page -->
+            <input type="button" onClick="history.go(0)" value="Reset"><br><br>
+            <!-- For name -->
+            <label><strong>Name:</strong></label>
+            <input name="" type="text" value="" placeholder="Enter name and surname" required/><br><br>
+            <!-- For password -->
+            <label><strong>Password</strong></label>
+            <input name="" type="password" value="" placeholder="Enter Password" required/><br><br>
+            <!-- For Numbers -->
+            <label><strong>Number:</strong></label>
+            <input name="" type="number" value="" placeholder="Enter your number" required/><br><br>
+            <!-- Dropdown -->
+            <label><strong>Gender:</strong></label>
+            <select>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select><br><br>
+            <!-- Date -->
+            <label><strong>Date of birth:</strong></label>
+            <input name="" type="date" value="" placeholder="" required/>
+            <br>
+            <br>
+            <hr>
+                <!-- Questions given to be added -->
+            <h2>Questions</h2>
+            <ol style="text-align:left;">
+            <li>How often do you visit coffee shops?</li><br>
+           <!-- Radio -->
+                <input type="radio" name="1" value="1" checked> Once Every week day<br>
+                <input type="radio" name="1" value="2"> Few times a week<br>
+                <input type="radio" name="1" value="3"> Once a week or 2
+           
+            <br>
+            <br>
+            <li>What is your favorite coffee shop? Where is it located?</li>
+            <textarea rows="2" cols="120" required>Answer..</textarea><br><br>
+            <li>What do you typically order to drink?</li>
+            <textarea>Black Coffee..</textarea><br><br>
+            <li>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</li>
+           <!-- Radio -->
+                <input type="radio" name="Options" value="1" checked>Large coffee shops<br>
+                <input type="radio" name="Options" value="2">National Chain coffee shops<br>
+                <input type="radio" name="Options" value="3">Small coffee shops<br>
+            <!-- ordered list -->
+            </ol>
+                <br>
+                <br>
+                <hr>            
+            <label><strong>Comments</strong></label><br>
+            <!-- maxlenght and minlenght is character restrictions -->
+            <textarea placeholder="" name="" rows="10" cols="60" maxlength="400" minlength="100">This is your Message</textarea><br><br>
+        
+            <button type="submit">SEND SURVEY</button>
+        </form>
+</body>
+</html>
